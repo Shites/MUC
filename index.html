@@ -12,6 +12,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="./style/index.css">
@@ -24,11 +25,11 @@
   <section id="landing" class="w-full bg-cover h-full landing "
     style="background-image: linear-gradient(#0684FA, #12C3FF);">
     <div class="">
-      <div class="absolute left-0 lg:bottom-[30rem] bottom-[35rem]">
-        <img class="w-[350px] lg:w-[600px] " src="./asset/awan-left.svg" alt="">
+      <div class="absolute fade-left left-0 lg:bottom-[30rem] bottom-[35rem]">
+        <img class="w-[350px] lg:w-[550px]  " src="./asset/awan-left.svg" alt="">
       </div>
-      <div class="absolute right-0 top-[15rem] lg:top-[16rem]">
-        <img class="w-[350px] lg:w-[600px]" src="./asset/awan-right.svg" alt="">
+      <div class="absolute fade-right right-0 top-[15rem] lg:top-[16rem]">
+        <img class="w-[350px] lg:w-[600px] " src="./asset/awan-right.svg" alt="">
       </div>
 
     </div>
@@ -136,21 +137,21 @@
 
     <!-- landing start mobile -->
     <div class="container-landing lg:pt-[20rem] pt-[15rem] flex flex-col justify-center items-center ">
-      <h1 class="text-6xl lg:text-8xl text-center mt-5 font-jersey text-white ">Mobile UI/UX Competition</h1>
-      <div class="flex flex-row mt-12">
+      <h1 class="text-6xl lg:text-8xl text-center mt-5 font-jersey text-white landingReveal">Mobile UI/UX Competition</h1>
+      <div class="flex flex-row mt-12 btnReveal">
         <button
-          class="bg-btnBase-0 rounded-full text-white text-sm mr-3 lg:px-3 lg:text-base px-2 py-2">Rp.100.000,00</button>
+          class="bg-btnbase-0 rounded-full text-white text-sm mr-3 lg:px-3 lg:text-base px-2 py-2">Rp.100.000,00</button>
         <button
-          class="bg-btnBase-0 rounded-full text-white text-sm  mr-3 lg:px-5  lg:text-base px-3 py-2">SMA/Sederajat</button>
-        <button class="bg-btnBase-0 rounded-full text-white text-sm  px-2 lg:px-3 lg:text-base py-2">Max. 3
+          class="bg-btnbase-0 rounded-full text-white text-sm  mr-3 lg:px-5  lg:text-base px-3 py-2">SMA/Sederajat</button>
+        <button class="bg-btnbase-0 rounded-full text-white text-sm  px-2 lg:px-3 lg:text-base py-2">Max. 3
           Orang</button>
       </div>
-      <p class="text-center px-10 lg:px-52 lg:text-lg text-white lg:mt-16 lg:mb-10 mt-8 mb-8">Innovative Informatics
+      <p class="text-center px-10 lg:px-52 lg:text-lg text-white lg:mt-16 lg:mb-10 mt-8 mb-8 txtReveal">Innovative Informatics
         Contest (I2C) adalah sebuah sebuah lomba
         di mana siswa siswi SMA/K sederajat dari seluruh Indonesia yang tergabung dalam satu tim, akan
         berkompetisi untuk merancang berbagai ide inovatif produk digital yang dapat menyelesaikan suatu
         masalah. I2C akan diadakan dalam bentuk serangkaian acara.</p>
-      <div class="flex justify-center items-center mx-5 lg:mx-10">
+      <div class="flex justify-center items-center mx-5 lg:mx-10 reveal">
         <img class="w-10 lg:w-20" src="./asset/star.svg" alt="">
         <h1 class="text-4xl lg:text-6xl mt-10 text-white text-center font-jersey">ABOUT MOBILE UI/UX COMPETITION</h1>
         <img class="w-10 lg:w-20" src="./asset/star.svg" alt="">
@@ -162,119 +163,122 @@
 
   <section class="w-full h-full slider pt-28" id="MUC-slider"
     style="background-image: linear-gradient(#12C3FF, #A0DAFF);">
-    <div class="flex justify-center items-center flex-col">
-      <div class="flex justify-center items-center"></div>
-      <p class="text-white font-khdam text-center ">IFEST #13 : HEROES OF INNOVATION</p>
-      <div class="flex justify-center items-center mx-5 lg:mx-20">
-        <img class="w-10 lg:w-16 lg:mb-[1rem] " src="./asset/star.svg" alt="">
-        <h1 class="text-4xl lg:text-6xl mt-5 text-white text-center font-jersey">MOBILE UI/UX COMPETITION</h1>
-        <img class="w-10 lg:w-16 lg:mb-[1rem]" src="./asset/star.svg" alt="">
-      </div>
-      <p class="text-white mt-10 lg:text-lg mb-10 px-8 lg:px-56 text-center">Lorem Ipsum is simply dummy text of the
-        printing and typesetting
-        industry.
-        Lorem Ipsum has been the industry's standard. Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard. Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-    </div>
-
-
-    <div class="container-slide">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide swiper-slide-active">
-            <img
-              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/487.svg"
-              alt="">
-            <div class="info">
-              <h4 class="name">
-                Giratina
-              </h4>
-              <span class="type">
-                Ghost, Dragon
-              </span>
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide-active">
-            <img
-              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/384.svg"
-              alt="">
-            <div class="info">
-              <h4 class="name">
-                Rayquaza
-              </h4>
-              <span class="type">
-                Dragon, Flying
-              </span>
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide-active">
-            <img
-              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/646.svg"
-              alt="">
-            <div class="info">
-              <h4 class="name">
-                Kyrum
-              </h4>
-              <span class="type">
-                Dragon, Ice
-              </span>
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide-active">
-            <img
-              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/249.svg"
-              alt="">
-            <div class="info">
-              <h4 class="name">
-                Lugia
-              </h4>
-              <span class="type">
-                Psychic, Flying
-              </span>
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide-active">
-            <img
-              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/383.svg"
-              alt="">
-            <div class="info">
-              <h4 class="name">
-                Groudon
-              </h4>
-              <span class="type">
-                Ground
-              </span>
-            </div>
-          </div>
+    <div class="reveal">
+      <div class="flex justify-center items-center flex-col">
+        <div class="flex justify-center items-center"></div>
+        <p class="text-white font-khdam text-center ">IFEST #13 : HEROES OF INNOVATION</p>
+        <div class="flex justify-center items-center mx-5 lg:mx-20">
+          <img class="w-10 lg:w-16 lg:mb-[1rem] " src="./asset/star.svg" alt="">
+          <h1 class="text-4xl lg:text-6xl mt-5 text-white text-center font-jersey">MOBILE UI/UX COMPETITION</h1>
+          <img class="w-10 lg:w-16 lg:mb-[1rem]" src="./asset/star.svg" alt="">
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <p class="text-white mt-10 lg:text-lg mb-10 px-8 lg:px-56 text-center">Lorem Ipsum is simply dummy text of the
+          printing and typesetting
+          industry.
+          Lorem Ipsum has been the industry's standard. Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard. Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard.</p>
       </div>
+  
+  
+      <div class="container-slide">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-active">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/487.svg"
+                alt="">
+              <div class="info">
+                <h4 class="name">
+                  Giratina
+                </h4>
+                <span class="type">
+                  Ghost, Dragon
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/384.svg"
+                alt="">
+              <div class="info">
+                <h4 class="name">
+                  Rayquaza
+                </h4>
+                <span class="type">
+                  Dragon, Flying
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/646.svg"
+                alt="">
+              <div class="info">
+                <h4 class="name">
+                  Kyrum
+                </h4>
+                <span class="type">
+                  Dragon, Ice
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/249.svg"
+                alt="">
+              <div class="info">
+                <h4 class="name">
+                  Lugia
+                </h4>
+                <span class="type">
+                  Psychic, Flying
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/383.svg"
+                alt="">
+              <div class="info">
+                <h4 class="name">
+                  Groudon
+                </h4>
+                <span class="type">
+                  Ground
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+  
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+  
+      <div class="flex flex-row items-center justify-center">
+        <button class="rounded-full bg-btnbase-0 px-10 py-2 mr-5 text-white">Poster</button>
+        <button class="rounded-full bg-btnbase-0 px-10 py-2  text-white">Rules</button>
+      </div>
+  
     </div>
-
-    <div class="flex flex-row items-center justify-center">
-      <button class="rounded-full bg-btnBase-0 px-10 py-2 mr-5 text-white">Poster</button>
-      <button class="rounded-full bg-btnBase-0 px-10 py-2  text-white">Rules</button>
     </div>
-
-    </div>
+   
 
   </section>
 
   <section class="w-full h-full tahapan pt-16 pb-40" style="background-image: linear-gradient(#A0DAFF,#8AF7FF );">
-    <div class="container-tahap flex flex-col justify-center items-center">
-      <p class="text-white font-khdam ">IFEST #13 : HEROES OF INNOVATION</p>
-      <div class="flex justify-center items-center mx-10 lg:mx-15">
+    <div class="container-tahap flex flex-col justify-center items-center reveal">
+      <p class="text-white font-khdam reveal ">IFEST #13 : HEROES OF INNOVATION</p>
+      <div class="flex justify-center items-center mx-10 lg:mx-15 reveal">
         <img class="w-[2rem] lg:w-[4rem] mb-10 lg:mb-5" src="./asset/star.svg" alt="">
         <h1 class="text-4xl lg:text-6xl mt-5 text-white font-jersey text-center">TAHAPAN MOBILE UI/UX COMPETITION</h1>
         <img class="w-[2rem] lg:w-[4rem] mb-10 lg:mb-5 " src="./asset/star.svg" alt="">
       </div>
-      <p class="text-white t px-6 lg:px-0 font-khdam text-center uppercase mt-5">Berikut ketentuan umum dan ketentuan
+      <p class="text-white reveal t px-6 lg:px-0 font-khdam text-center uppercase mt-5">Berikut ketentuan umum dan ketentuan
         karya untuk lomba Capture
         The
         Flag
@@ -282,17 +286,17 @@
 
       <div class="py-20">
         <div class="absolute right-0 ">
-          <img class="w-[200px] lg:w-[500px]" src="./asset/awan-right.svg" alt="">
+          <img class="w-[200px] lg:w-[500px] reveal" src="./asset/awan-right.svg" alt="">
         </div>
-        <img class="relative w-[5rem] lg:top-[8rem] lg:w-[14rem]" src="./asset/sunset.svg" alt="">
+        <img class="relative w-[5rem] lg:top-[8rem] lg:w-[14rem] reveal" src="./asset/sunset.svg" alt="">
         <div class="absolute left-0">
-          <img class="w-[200px] lg:w-[500px]" src="./asset/awan-left.svg" alt="">
+          <img class="w-[200px] lg:w-[500px] reveal" src="./asset/awan-left.svg" alt="">
         </div>
       </div>
 
 
       <!-- Start - Ketentuan Mobile -->
-      <div class="lg:hidden mt-5">
+      <div class="lg:hidden mt-5 reveal">
 
 
         <div class="flex flex-col mx-10 items-center">
@@ -480,184 +484,207 @@
 
       <div class="hidden lg:block">
         <div class="flex flex-row justify-center items-center pt-44">
-          <div class="bg-white w-[40vw] h-auto rounded-xl" style="
+          <div class="flex flex-col">
+            <div class="bg-white w-[40vw] h-auto rounded-xl reveal" style="
                   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2),
                     0 4px 25px rgba(255, 255, 255, 0.15),
                     0 -4px 25px rgba(255, 255, 255, 0.15),
                     -4px 0 15px rgba(255, 255, 255, 0.15),
                     4px 0 15px rgba(255, 255, 255, 0.15);
                 ">
-            <div class="flex flex-col p-5">
-              <h1 class="text-center font-jersey25 text-3xl text-[#2D678C]">
-                KETENTUAN UMUM
-              </h1>
-              <div class="font-inter mt-2 text-sm">
-                <ul class="space-y-2">
-                  <li>
-                    1. Peserta adalah
-                    <span class="font-inter">mahasiswa/i aktif jenjang D3/D4/S1</span>
-                    dari perguruan tinggi di
-                    <span class="font-inter">Seluruh Indonesia</span>.
-                  </li>
-                  <li>
-                    2. Peserta lomba adalah satu tim yang terdiri dari minimal
-                    1 (satu) orang dan maksimal 3 (tiga) orang.
-                  </li>
-                  <li>
-                    3. Tim yang terdiri dari 2 (dua) atau 3 (tiga) orang
-                    peserta
-                    <span class="font-inter">harus berasal dari institusi/perguruan tinggi yang
-                      sama.</span>
-                  </li>
-                  <li>
-                    4. Tidak diperkenankan ada peserta yang terdaftar dalam
-                    dua tim atau lebih yang berbeda.
-                  </li>
-                  <li>
-                    5. Melakukan pendaftaran online melalui
-                    <a href="https://bit.ly/Pendaftaran_WDC" class="text-blue-500">https://bit.ly/Pendaftaran_WDC</a>,
-                    pendaftaran dibuka mulai
-                    <span class="font-inter">Senin, 17 Februari 2025</span>
-                    hingga
-                    <span class="font-inter">Sabtu, 08 Maret 2025 pukul 23.59 WIB.</span>
-                  </li>
-                  <li>
-                    6. Melampirkan scan/foto Kartu Tanda Mahasiswa, Surat
-                    Persetujuan Universitas, dan Bukti Pembayaran pada
-                    formulir pendaftaran.
-                  </li>
-                  <li>
-                    7. Peserta membayar biaya pendaftaran sebesar Rp50.000,00
-                    melalui: <br />Nama: Alexander Wongso, <br />
-                    Bank: BCA, <br />
-                    No Rekening: 8305549980.
-                  </li>
-                  <li>
-                    8. Batas pembayaran dan pengumpulan karya:
-                    <span class="font-inter">Sabtu, 08 Maret 2025 pukul 23.59 WIB.</span>
-                  </li>
-                  <li>
-                    9. Semua peserta yang mengirimkan karya akan mendapatkan
-                    e-certificate.
-                  </li>
-                  <li>
-                    10. Peserta yang mendaftar tetapi tidak mengumpulkan karya
-                    setelah batas waktu dianggap mengundurkan diri.
-                  </li>
-                  <li>
-                    11. Panitia berhak mengeliminasi peserta yang tidak
-                    mematuhi ketentuan di atas.
-                  </li>
-                  <li>
-                    12. Setiap peserta WDC 2025 wajib membaca, memahami, dan
-                    mengikuti syarat dan ketentuan dalam rulebook.
-                  </li>
-                </ul>
+              <div class="flex flex-col p-5">
+                <h1 class="text-center font-jersey25 text-3xl text-[#2D678C]">
+                  KETENTUAN UMUM
+                </h1>
+                <div class="font-inter mt-2 text-sm">
+                  <ul class="space-y-2">
+                    <li>
+                      1. Peserta adalah
+                      <span class="font-inter">mahasiswa/i aktif jenjang D3/D4/S1</span>
+                      dari perguruan tinggi di
+                      <span class="font-inter">Seluruh Indonesia</span>.
+                    </li>
+                    <li>
+                      2. Peserta lomba adalah satu tim yang terdiri dari minimal
+                      1 (satu) orang dan maksimal 3 (tiga) orang.
+                    </li>
+                    <li>
+                      3. Tim yang terdiri dari 2 (dua) atau 3 (tiga) orang
+                      peserta
+                      <span class="font-inter">harus berasal dari institusi/perguruan tinggi yang
+                        sama.</span>
+                    </li>
+                    <li>
+                      4. Tidak diperkenankan ada peserta yang terdaftar dalam
+                      dua tim atau lebih yang berbeda.
+                    </li>
+                    <li>
+                      5. Melakukan pendaftaran online melalui
+                      <a href="https://bit.ly/Pendaftaran_WDC" class="text-blue-500">https://bit.ly/Pendaftaran_WDC</a>,
+                      pendaftaran dibuka mulai
+                      <span class="font-inter">Senin, 17 Februari 2025</span>
+                      hingga
+                      <span class="font-inter">Sabtu, 08 Maret 2025 pukul 23.59 WIB.</span>
+                    </li>
+                    <li>
+                      6. Melampirkan scan/foto Kartu Tanda Mahasiswa, Surat
+                      Persetujuan Universitas, dan Bukti Pembayaran pada
+                      formulir pendaftaran.
+                    </li>
+                    <li>
+                      7. Peserta membayar biaya pendaftaran sebesar Rp50.000,00
+                      melalui: <br />Nama: Alexander Wongso, <br />
+                      Bank: BCA, <br />
+                      No Rekening: 8305549980.
+                    </li>
+                    <li>
+                      8. Batas pembayaran dan pengumpulan karya:
+                      <span class="font-inter">Sabtu, 08 Maret 2025 pukul 23.59 WIB.</span>
+                    </li>
+                    <li>
+                      9. Semua peserta yang mengirimkan karya akan mendapatkan
+                      e-certificate.
+                    </li>
+                    <li>
+                      10. Peserta yang mendaftar tetapi tidak mengumpulkan karya
+                      setelah batas waktu dianggap mengundurkan diri.
+                    </li>
+                    <li>
+                      11. Panitia berhak mengeliminasi peserta yang tidak
+                      mematuhi ketentuan di atas.
+                    </li>
+                    <li>
+                      12. Setiap peserta WDC 2025 wajib membaca, memahami, dan
+                      mengikuti syarat dan ketentuan dalam rulebook.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
+            <div class="">
+              <div class="absolute left-0">
+                <img class="w-[20rem]" src="./asset/wave-left.png" alt="">
+              </div>
+
+            </div>
           </div>
+
+
+
+
 
           <img src="./asset/garis.svg" alt="" class="w-10 mt-16 mr-5 ml-5" />
-          <div class="bg-white w-[40vw] h-auto rounded-xl z-10 max-h-[690px] overflow-y-scroll " style="
+          <div class="flex flex-col">
+
+           
+            <div class="bg-white w-[40vw] h-auto rounded-xl z-10 max-h-[690px] overflow-y-scroll reveal " style="
                   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2),
                     0 4px 25px rgba(255, 255, 255, 0.15),
                     0 -4px 25px rgba(255, 255, 255, 0.15),
                     -4px 0 15px rgba(255, 255, 255, 0.15),
                     4px 0 15px rgba(255, 255, 255, 0.15);
                 ">
-            <div class="flex flex-col p-5">
-              <h1 class="text-center font-jersey25 text-3xl text-[#2D678C]">
-                KETENTUAN KARYA
-              </h1>
+              <div class="flex flex-col p-5">
+                <h1 class="text-center font-jersey25 text-3xl text-[#2D678C]">
+                  KETENTUAN KARYA
+                </h1>
 
-              <div class="font-inter mt-2 text-sm">
-                <ul class="space-y-2">
-                  <li>1. Karya desain berupa situs web desktop.</li>
-                  <li>
-                    2. Peserta dibebaskan menggunakan software apapun dalam
-                    pembuatan desain.
-                  </li>
-                  <li>3. Hasil karya harus sesuai dengan tema WDC 2025.</li>
-                  <li>
-                    4. Website wajib menyertakan fitur tukar dan jual-beli
-                    pakaian, edukasi mengenai fashion ramah lingkungan, dan
-                    tantangan untuk mendorong pengurangan pembelian pakaian
-                    baru.
-                  </li>
-                  <li>
-                    5. Peserta bebas berkreasi dengan judul, tampilan, dan
-                    fitur website, termasuk sistem tukar dan jual-beli
-                    pakaian. Edukasi dapat disampaikan melalui artikel, video,
-                    dll. Peserta diwajibkan untuk membuat fitur lainnya yang
-                    berkaitan dengan tema fashion.
-                  </li>
-                  <li>
-                    6. Peserta diperbolehkan untuk menggunakan foto/video
-                    pribadi dan dari internet dalam menunjang estetika website
-                    yang dibuat.
-                  </li>
-                  <li>
-                    7. Web harus mengandung fungsi-fungsi esensial, jumlah
-                    halaman web maksimal 15 halaman (tidak termasuk homepage).
-                  </li>
-                  <li>
-                    8. Bahasa utama yang digunakan dalam pembuatan website
-                    adalah
-                    <span class="font-inter">Bahasa Indonesia atau Bahasa Inggris</span>
-                    dan
-                    <span class="font-inter">diperbolehkan</span>
-                    menggunakan istilah dalam bahasa asing.
-                  </li>
-                  <li>
-                    9. Peserta
-                    <span class="font-inter">wajib</span> menyertakan kode
-                    (code) desain web.
-                  </li>
-                  <li>
-                    10. Peserta
-                    <span class="font-inter">wajib</span> mengumpulkan
-                    karya website dalam bentuk link yang siap digunakan ke
-                    dalam pdf.
-                  </li>
-                  <li>
-                    11. Desain situs web dilarang mengandung unsur
-                    <span class="font-inter">SARA, kekerasan, pornografi, dan melanggar UU yang
-                      berlaku.</span>
-                  </li>
-                  <li>
-                    12. Desain situs web yang diperlombakan menjadi hak
-                    panitia.
-                  </li>
-                  <li>
-                    13. Panitia WDC 2025 berhak mendiskualifikasi peserta jika
-                    diketahui Hak Atas Kekayaan Intelektualnya diragukan,
-                    seperti sedang dalam sengketa, mengambil karya orang lain,
-                    atau mendapat klaim dari pihak lain.
-                  </li>
-                  <li>
-                    14. Keputusan juri dan panitia bersifat mutlak dan tidak
-                    dapat diganggu gugat.
-                  </li>
-                  <li>
-                    15. Penilaian karya didasarkan pada kriteria berikut.
-                    <br />
-                    &nbsp;<span class="font-inter">a. Tampilan Layout/Antarmuka (30%)</span>
-                    <br />Menampilkan antarmuka situs web dengan struktur yang
-                    tepat. <br /><br />
-                    &nbsp;<span class="font-inter">b. Kesesuaian Tema (30%)</span>
-                    <br />Situs web yang didesain berkaitan dengan tema yang
-                    telah ditentukan. <br /><br />
-                    &nbsp;<span class="font-inter">c. Daya Tarik dan Informatif (25%)</span>
-                    <br />Dapat menciptakan daya tarik dan memberikan pesan
-                    yang informatif. <br /><br />
-                    &nbsp;<span class="font-inter">d. Responsif (15%)</span>
-                    <br />Situs web dapat diakses dengan menyesuaikan ukuran
-                    pada perangkat yang berbeda (desktop, tablet, mobile).
-                  </li>
-                </ul>
+                <div class="font-inter mt-2 text-sm">
+                  <ul class="space-y-2">
+                    <li>1. Karya desain berupa situs web desktop.</li>
+                    <li>
+                      2. Peserta dibebaskan menggunakan software apapun dalam
+                      pembuatan desain.
+                    </li>
+                    <li>3. Hasil karya harus sesuai dengan tema WDC 2025.</li>
+                    <li>
+                      4. Website wajib menyertakan fitur tukar dan jual-beli
+                      pakaian, edukasi mengenai fashion ramah lingkungan, dan
+                      tantangan untuk mendorong pengurangan pembelian pakaian
+                      baru.
+                    </li>
+                    <li>
+                      5. Peserta bebas berkreasi dengan judul, tampilan, dan
+                      fitur website, termasuk sistem tukar dan jual-beli
+                      pakaian. Edukasi dapat disampaikan melalui artikel, video,
+                      dll. Peserta diwajibkan untuk membuat fitur lainnya yang
+                      berkaitan dengan tema fashion.
+                    </li>
+                    <li>
+                      6. Peserta diperbolehkan untuk menggunakan foto/video
+                      pribadi dan dari internet dalam menunjang estetika website
+                      yang dibuat.
+                    </li>
+                    <li>
+                      7. Web harus mengandung fungsi-fungsi esensial, jumlah
+                      halaman web maksimal 15 halaman (tidak termasuk homepage).
+                    </li>
+                    <li>
+                      8. Bahasa utama yang digunakan dalam pembuatan website
+                      adalah
+                      <span class="font-inter">Bahasa Indonesia atau Bahasa Inggris</span>
+                      dan
+                      <span class="font-inter">diperbolehkan</span>
+                      menggunakan istilah dalam bahasa asing.
+                    </li>
+                    <li>
+                      9. Peserta
+                      <span class="font-inter">wajib</span> menyertakan kode
+                      (code) desain web.
+                    </li>
+                    <li>
+                      10. Peserta
+                      <span class="font-inter">wajib</span> mengumpulkan
+                      karya website dalam bentuk link yang siap digunakan ke
+                      dalam pdf.
+                    </li>
+                    <li>
+                      11. Desain situs web dilarang mengandung unsur
+                      <span class="font-inter">SARA, kekerasan, pornografi, dan melanggar UU yang
+                        berlaku.</span>
+                    </li>
+                    <li>
+                      12. Desain situs web yang diperlombakan menjadi hak
+                      panitia.
+                    </li>
+                    <li>
+                      13. Panitia WDC 2025 berhak mendiskualifikasi peserta jika
+                      diketahui Hak Atas Kekayaan Intelektualnya diragukan,
+                      seperti sedang dalam sengketa, mengambil karya orang lain,
+                      atau mendapat klaim dari pihak lain.
+                    </li>
+                    <li>
+                      14. Keputusan juri dan panitia bersifat mutlak dan tidak
+                      dapat diganggu gugat.
+                    </li>
+                    <li>
+                      15. Penilaian karya didasarkan pada kriteria berikut.
+                      <br />
+                      &nbsp;<span class="font-inter">a. Tampilan Layout/Antarmuka (30%)</span>
+                      <br />Menampilkan antarmuka situs web dengan struktur yang
+                      tepat. <br /><br />
+                      &nbsp;<span class="font-inter">b. Kesesuaian Tema (30%)</span>
+                      <br />Situs web yang didesain berkaitan dengan tema yang
+                      telah ditentukan. <br /><br />
+                      &nbsp;<span class="font-inter">c. Daya Tarik dan Informatif (25%)</span>
+                      <br />Dapat menciptakan daya tarik dan memberikan pesan
+                      yang informatif. <br /><br />
+                      &nbsp;<span class="font-inter">d. Responsif (15%)</span>
+                      <br />Situs web dapat diakses dengan menyesuaikan ukuran
+                      pada perangkat yang berbeda (desktop, tablet, mobile).
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
+            <div class="">
+              <div class="absolute right-0">
+              <img class="w-[25rem]" src="./asset/wave-right.png" alt="">
+            </div>
           </div>
+            
+          </div>
+
 
 
 
@@ -665,9 +692,9 @@
       </div>
 
       <div class="flex flex-row justify-center items-center mt-10">
-        <button class="bg-btnBase-0 text-white px-5 py-2 mr-4 rounded-full">Poster</button>
-        <button class="bg-btnBase-0 text-white px-10 py-2 mr-4 rounded-full">Daftar</button>
-        <button class="bg-btnBase-0 text-white px-5 py-2 rounded-full">Rules</button>
+        <button class="bg-btnbase-0 text-white px-5 py-2 mr-4 rounded-full">Poster</button>
+        <button class="bg-btnbase-0 text-white px-10 py-2 mr-4 rounded-full">Daftar</button>
+        <button class="bg-btnbase-0 text-white px-5 py-2 rounded-full">Rules</button>
       </div>
 
 
@@ -677,16 +704,18 @@
   </section>
 
   <section class="w-full h-full timeline py-20" style="background-image: linear-gradient(#8AF7FF,#CBFCFF);">
-    <p class=" text-center font-khdam text-sm lg:text-base ">IFEST #13 : HEROES OF INNOVATION</p>
+    <div class="reveal">
+       <p class=" text-center font-khdam text-sm lg:text-base ">IFEST #13 : HEROES OF INNOVATION</p>
     <div class="flex items-center justify-center mx-10 lg:mx-24">
       <img class="w-10 lg:w-20 lg:mb-5" src="./asset/star.svg" alt="">
       <h1 class="lg:text-6xl text-4xl text-center mt-5 font-jersey">TAHAPAN MOBILE UI/UX COMPETITION</h1>
       <img class="w-10 lg:w-20 lg:mb-5" src="./asset/star.svg" alt="">
     </div>
-    <p class=" text-center text-sm px-10 lg:text-base lg:px-0 font-khdam uppercase mt-5">Berikut ketentuan umum dan ketentuan karya untuk lomba Capture
+    <p class=" text-center text-sm px-10 lg:text-base lg:px-0 font-khdam uppercase mt-5">Berikut ketentuan umum dan
+      ketentuan karya untuk lomba Capture
       The Flag</p>
 
-    <div class="block lg:hidden p-5">
+    <div class="block reveal lg:hidden p-5">
       <div class="mx-5 items-center justify-center flex flex-col">
         <div class="flex items-center justify-center relative mr-10 slideUp transform translate-y-full">
           <div class="absolute -top-1 bg-[#EDB108] w-32 h-3 rounded-full drop-shadow-lg"></div>
@@ -802,13 +831,16 @@
         </div>
       </div>
     </div>
+    </div>
+    
+   
 
     <!-- End - Mobile -->
 
     <!-- Start - Desktop -->
 
 
-    <div class="hidden lg:block mt-32">
+    <div class="hidden lg:block reveal mt-32">
       <div class="flex items-center justify-center gap-3">
 
         <div class="flex items-center justify-center relative fadeIn" style="--fadeDuration: 1">
@@ -935,148 +967,142 @@
 
   </section>
 
-  <section
-      class="w-full h-full lg:pb-10 lg:pt-0 pb-20 pt-24 bg-cover bg-center"
-      style="background-image: linear-gradient(#cbfcff,#EBFDFF)"
-    >
+  <section class="w-full h-full lg:pb-10 lg:pt-0 pb-20 pt-24 bg-cover bg-center"
+    style="background-image: linear-gradient(#cbfcff,#EBFDFF)">
 
-      <div class="relative z-10">
-        <div
-          class="flex justify-center items-center mx-5 lg:mx-10 slideUp transform translate-y-full"
-        >
-          <img src="./asset/star.svg" class="w-10 lg:w-20" alt="" />
-          <div class="text-black">
-            <h1 class="text-center mt-5 text-xs font-khdam">
-              IFEST #13 : HEROES OF INNOVATION
-            </h1>
-            <h1
-              class="t text-center font-jersey text-4xl lg:text-5xl mx-2 mt-3"
-            >
-              PRIZEPOOL
-            </h1>
-            <h1 class="text-center mt-2 text-sm lg:text-base font-khdam">
-              Total hadiah Rp6.000.000,00
-            </h1>
-          </div>
-          <img src="./asset/star.svg" class="w-10 lg:w-20" alt="" />
+    <div class="relative z-10 reveal">
+      <div class="flex justify-center items-center mx-5 lg:mx-10 slideUp transform translate-y-full">
+        <img src="./asset/star.svg" class="w-10 lg:w-20" alt="" />
+        <div class="text-black">
+          <h1 class="text-center mt-5 text-xs font-khdam">
+            IFEST #13 : HEROES OF INNOVATION
+          </h1>
+          <h1 class="t text-center font-jersey text-4xl lg:text-5xl mx-2 mt-3">
+            PRIZEPOOL
+          </h1>
+          <h1 class="text-center mt-2 text-sm lg:text-base font-khdam">
+            Total hadiah Rp6.000.000,00
+          </h1>
         </div>
-
-        <!-- Start - Juara -->
-
-        <!-- Start - Juara Mobile -->
-
-        <div class="block lg:hidden">
-          <div class="mt-5 items-center flex flex-col space-y-5">
-            <div class="items-center flex flex-col transform translate-y-full">
-              <img src="./asset/juara_1.svg" class="w-32" alt="" />
-              <h1 class="font-jersey25 text-center text-xl mt-2">FIRST</h1>
-              <div class="font-khdam text-center text-sm">
-                <div class="flex gap-1 items-center text-center justify-center">
-                  <img src="./asset/money.png" class="w-5" alt="" />
-                  <p>Rp3.000.000,00</p>
-                </div>
-                <div class="flex gap-2 items-center text-center justify-normal mt-1">
-                  <img src="/asset/certificate.png" class="w-5" alt="" />
-                  <p>Sertifikat Nasional</p>
-                </div>
-              </div>
-            </div>
-            <div class="items-center flex flex-col  translate-y-full">
-              <img src="./asset/juara_2.svg" class="w-32" alt="" />
-              <h1 class="font-jersey25 text-center text-xl mt-2">SECOND</h1>
-              <div class="font-khdam text-center text-sm">
-                <div class="flex gap-1 items-center text-center justify-center">
-                  <img src="./asset/money.png" class="w-5" alt="" />
-                  <p>Rp2.000.000,00</p>
-                </div>
-                <div class="flex gap-2 items-center text-center justify-normal mt-1">
-                  <img src="./asset/certificate.png" class="w-5" alt="" />
-                  <p>Sertifikat Nasional</p>
-                </div>
-              </div>
-            </div>
-            <div class="items-center flex flex-col  translate-y-full">
-              <img src="./asset/juara_3.svg" class="w-32" alt="" />
-              <h1 class="font-jersey25 text-center text-xl mt-2">THIRD</h1>
-              <div class="font-khdam text-center text-sm">
-                <div class="flex gap-1 items-center text-center justify-center">
-                  <img src="./asset/money.png" class="w-5" alt="" />
-                  <p>Rp1.000.000,00</p>
-                </div>
-                <div class="flex gap-2 items-center text-center justify-normal mt-1">
-                  <img src="/asset/certificate.png" class="w-5" alt="" />
-                  <p>Sertifikat Nasional</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- End - Juara Mobile -->
-
-        <!-- Start - Juara Desktop -->
-        <div class="hidden lg:block">
-          <div class="flex items-center justify-center gap-20 mt-32">
-            <div class="mt-20 slideUp">
-              <img src="./asset/juara_2.svg" class="w-80" alt="" />
-              <h1 class="font-jersey25 text-center text-3xl mt-2">SECOND</h1>
-              <div class="font-khdam text-center">
-                <div class="flex gap-1 items-center text-center justify-center">
-                  <img src="./asset/money.png" class="w-8" alt="" />
-                  <p>Rp2.000.000,00</p>
-                </div>
-                <div class="flex gap-2 items-center text-center justify-center">
-                  <img src="./asset/certificate.png" class="w-8" alt="" />
-                  <p>Sertifikat Nasional</p>
-                </div>
-              </div>
-            </div>
-            <div class="slideUp ">
-              <img src="./asset/juara_1.svg" class="w-80" alt="" />
-              <h1 class="font-jersey25 text-center text-3xl mt-2">FIRST</h1>
-              <div class="font-khdam text-center">
-                <div class="flex gap-1 items-center text-center justify-center">
-                  <img src="./asset/money.png" class="w-8" alt="" />
-                  <p>Rp3.000.000,00</p>
-                </div>
-                <div class="flex gap-2 items-center text-center justify-center">
-                  <img src="./asset/certificate.png" class="w-8" alt="" />
-                  <p>Sertifikat Nasional</p>
-                </div>
-              </div>
-            </div>
-            <div class="mt-20 slideUp">
-              <img src="./asset/juara_3.svg" class="w-80" alt="" />
-              <h1 class="font-jersey25 text-center text-3xl mt-2">THIRD</h1>
-              <div class="font-khdam text-center">
-                <div class="flex gap-1 items-center text-center justify-center">
-                  <img src="./asset/money.png" class="w-8" alt="" />
-                  <p>Rp1.000.000,00</p>
-                </div>
-                <div class="flex gap-2 items-center text-center justify-center">
-                  <img src="./asset/certificate.png" class="w-8" alt="" />
-                  <p>Sertifikat Nasional</p>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- End - Juara Desktop -->
-
-        <!-- End - Juara-->
+        <img src="./asset/star.svg" class="w-10 lg:w-20" alt="" />
       </div>
-    </section>
 
-  
+      <!-- Start - Juara -->
+
+      <!-- Start - Juara Mobile -->
+
+      <div class="block lg:hidden">
+        <div class="mt-5 items-center flex flex-col space-y-5">
+          <div class="items-center flex flex-col transform translate-y-full reveal">
+            <img src="./asset/juara_1.svg" class="w-32" alt="" />
+            <h1 class="font-jersey25 text-center text-xl mt-2">FIRST</h1>
+            <div class="font-khdam text-center text-sm">
+              <div class="flex gap-1 items-center text-center justify-center">
+                <img src="./asset/money.png" class="w-5" alt="" />
+                <p>Rp3.000.000,00</p>
+              </div>
+              <div class="flex gap-2 items-center text-center justify-normal mt-1">
+                <img src="/asset/certificate.png" class="w-5" alt="" />
+                <p>Sertifikat Nasional</p>
+              </div>
+            </div>
+          </div>
+          <div class="items-center flex flex-col  translate-y-full reveal">
+            <img src="./asset/juara_2.svg" class="w-32" alt="" />
+            <h1 class="font-jersey25 text-center text-xl mt-2">SECOND</h1>
+            <div class="font-khdam text-center text-sm">
+              <div class="flex gap-1 items-center text-center justify-center">
+                <img src="./asset/money.png" class="w-5" alt="" />
+                <p>Rp2.000.000,00</p>
+              </div>
+              <div class="flex gap-2 items-center text-center justify-normal mt-1">
+                <img src="./asset/certificate.png" class="w-5" alt="" />
+                <p>Sertifikat Nasional</p>
+              </div>
+            </div>
+          </div>
+          <div class="items-center flex flex-col  translate-y-full reveal">
+            <img src="./asset/juara_3.svg" class="w-32" alt="" />
+            <h1 class="font-jersey25 text-center text-xl mt-2">THIRD</h1>
+            <div class="font-khdam text-center text-sm">
+              <div class="flex gap-1 items-center text-center justify-center">
+                <img src="./asset/money.png" class="w-5" alt="" />
+                <p>Rp1.000.000,00</p>
+              </div>
+              <div class="flex gap-2 items-center text-center justify-normal mt-1">
+                <img src="/asset/certificate.png" class="w-5" alt="" />
+                <p>Sertifikat Nasional</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End - Juara Mobile -->
+
+      <!-- Start - Juara Desktop -->
+      <div class="hidden lg:block">
+        <div class="flex items-center justify-center gap-20 mt-32">
+          <div class="mt-20 slideUp reveal">
+            <img src="./asset/juara_2.svg" class="w-80" alt="" />
+            <h1 class="font-jersey25 text-center text-3xl mt-2">SECOND</h1>
+            <div class="font-khdam text-center">
+              <div class="flex gap-1 items-center text-center justify-center">
+                <img src="./asset/money.png" class="w-8" alt="" />
+                <p>Rp2.000.000,00</p>
+              </div>
+              <div class="flex gap-2 items-center text-center justify-center">
+                <img src="./asset/certificate.png" class="w-8" alt="" />
+                <p>Sertifikat Nasional</p>
+              </div>
+            </div>
+          </div>
+          <div class="slideUp reveal ">
+            <img src="./asset/juara_1.svg" class="w-80" alt="" />
+            <h1 class="font-jersey25 text-center text-3xl mt-2">FIRST</h1>
+            <div class="font-khdam text-center">
+              <div class="flex gap-1 items-center text-center justify-center">
+                <img src="./asset/money.png" class="w-8" alt="" />
+                <p>Rp3.000.000,00</p>
+              </div>
+              <div class="flex gap-2 items-center text-center justify-center">
+                <img src="./asset/certificate.png" class="w-8" alt="" />
+                <p>Sertifikat Nasional</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-20 slideUp reveal">
+            <img src="./asset/juara_3.svg" class="w-80" alt="" />
+            <h1 class="font-jersey25 text-center text-3xl mt-2">THIRD</h1>
+            <div class="font-khdam text-center">
+              <div class="flex gap-1 items-center text-center justify-center">
+                <img src="./asset/money.png" class="w-8" alt="" />
+                <p>Rp1.000.000,00</p>
+              </div>
+              <div class="flex gap-2 items-center text-center justify-center">
+                <img src="./asset/certificate.png" class="w-8" alt="" />
+                <p>Sertifikat Nasional</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End - Juara Desktop -->
+
+    <!-- End - Juara-->
+    </div>
+  </section>
+
+
   <section class="w-full h-full pt-28 pb-20" style="background-image: linear-gradient(#EBFDFF,#EBFDFF);">
-    <div class="flex justify-center items-center flex-col cta mt-20">
+    <div class="flex justify-center items-center flex-col cta mt-20 reveal">
       <div class="text-black text-center">
-        <h1 class="lg:text-base font-khdam mt-5">
+        <h1 class="lg:text-base font-khdam mt-5 reveal">
           IFEST #13 : HEROES OF INNOVATION
         </h1>
-        <div class="flex justify-center items-center mx-10 lg:mx-24">
+        <div class="flex justify-center items-center mx-10 lg:mx-24 reveal">
           <img class="w-9 lg:w-20 lg:mb-8" src="./asset/star.svg" alt="">
           <h1 class="font-jersey text-4xl lg:text-6xl">
             TERTARIK? AYO SEGERA DAFTAR!
@@ -1085,20 +1111,20 @@
 
         </div>
 
-        <h1 class="mt-2 text-sm lg:text-base font-khdam">
+        <h1 class="mt-2 text-sm lg:text-base font-khdam reveal">
           Apakah kamu siap menghadapi tantangan di dunia teknologi informasi?
           <br />Ayo, jangan lewatkan kesempatan untuk menunjukkan kreativitas
           dan keahlianmu di IFEST #13! 🌐
         </h1>
       </div>
 
-      <button class="bg-btnBase-0 rounded-full text-white px-10 py-2 mt-10">Daftar ></button>
+      <button class=" reveal  bg-btnbase-0 rounded-full text-white px-10 py-2 mt-10">Daftar ></button>
     </div>
     </div>
   </section>
 
   <section class="w-full h-full pt-20 pb-20" style="background-image: linear-gradient(#EBFDFF,#85DAFF);">
-    <div class="flex flex-col justify-center items-center">
+    <div class="flex flex-col justify-center items-center reveal">
       <div class="text-black text-center">
         <h1 class="text-xs lg:text-base font-khdam mt-5">
           IFEST #13 : HEROES OF INNOVATION
@@ -1120,7 +1146,7 @@
 
 
       <div class="relative z-10 flex justify-center mt-10 lg:mt-28 pb-10">
-        <div class="w-64 h-auto px-5 py-8 mx-5 rounded-2xl flex flex-col items-center justify-center fadeIn" style="
+        <div class="w-64 h-auto px-5 py-8 mx-5 rounded-2xl flex flex-col items-center justify-center fadeIn reveal" style="
             background: radial-gradient(circle, #ffe864, #d4cf4a, #1b813d);
             --fade-duration: 2;
           ">

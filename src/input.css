@@ -1,3 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme{
+    --color-btnbase-0: #F4347F;
+    --font-jersey: "Jersey 10", "serif";
+    --font-jersey25: "Jersey 25", "serif";
+    --font-khdam: "Kdam Thmor Pro", "serif";
+    --font-inter: "Inter Tight", "serif";
+    --font-montserrat: "Montserrat", "serif";
+    --font-interBold: "Inter", "serif";
+}
+

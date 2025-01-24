@@ -1,3 +1,7 @@
+
+
+
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -77,6 +81,84 @@
     }
   }
 }
+
+.fade-right{
+  animation: fadeInRight 1s ease-in-out;  
+  
+}
+
+.fade-left{
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+.landingReveal{
+  animation: landingReveal 1s ease-in-out;
+}
+
+.btnReveal{
+  animation:  btnReveal 1s ease-in-out;
+}
+
+.txtReveal{
+  animation: txtReveal 1s ease-in-out;
+}
+
+@keyframes landingReveal{
+  0%{
+    opacity: 0;
+    transform: translateY(70px);
+    transition: all 1s ease;
+  }}
+
+  @keyframes btnReveal{
+    0%{
+      opacity: 0;
+      transform: translateY(110px);
+      transition: all 1s ease;
+    }}
+
+    @keyframes txtReveal{
+      0%{
+        opacity: 0;
+        transform: translateY(140px);
+        transition: all 1s ease;
+      }}
+
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-1px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}  
+
+@keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(-1px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}  
+
 
 @media (min-width: 1024px) {
   .container-slide {
